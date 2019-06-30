@@ -19,4 +19,6 @@ terraform apply --var-file=input.tfvars
 Once executed it will provisioing VPC, with required subnets, gateway, route_table etc and provision one instance with ELB attached with created instance, the out put will provide your ELB hostname which can be used for accessing the helloword services.
 
 # Bootstrapping
-user-data.sh file needs to be used for bootstrapping which will bootstrap the instance during orchestration and install docker on the provisioned host
+user-data.sh file can be used for bootstrapping which will bootstrap the instance during orchestration and install docker on the provisioned host or if you want, you can add it in your build pipeline along with your Dockerfile which will create container and execute it.
+
+Once the process get completed you can access the helloworld Application using ELB URL.
