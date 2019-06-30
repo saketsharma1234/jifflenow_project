@@ -22,3 +22,5 @@ Once executed it will provisioing VPC, with required subnets, gateway, route_tab
 user-data.sh file can be used for bootstrapping which will bootstrap the instance during orchestration and install docker on the provisioned host or if you want, you can add it in your build pipeline along with your Dockerfile which will create container and execute it.
 
 Once the process get completed you can access the helloworld Application using ELB URL.
+
+Have not broken the terraform script in module because it was just one action and there is no point of deviing it futher, if you want it to be modified and broken in modules of VPC, ELB, EC2 that can also be performed.
